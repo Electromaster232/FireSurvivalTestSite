@@ -1,0 +1,340 @@
+/* Font Import */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #f4f4f4
+}
+
+
+/* Media Query */
+
+@media all and (max-width: 1024px) {
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+  header #branding {
+    text-align: center;
+  }
+  header li {
+    visibility: hidden;
+  }
+  section .feature {
+    width: 100%;
+  }
+}
+
+
+
+/* Global CSS */
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Header */
+
+header {
+  background-color: #35424a;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #61FF00 3px solid;
+  /* Change the color scheme here*/
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+
+
+header li {
+  float: left;
+  display: inline-block;
+  padding: 0 10px 0 10px;
+  decoration: none;
+
+}
+
+
+header #branding {
+  float: none;
+}
+
+header #branding h1 {
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+header nav {
+  float: right;
+  margin-top: -35px;
+
+}
+
+.button {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 4px;
+  background-color: #61FF00;
+  /* Change the color scheme here */
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+  padding: 0;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-weight: 300;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+header #branding span {
+  color: #61FF00;
+  /* Change the color scheme here */
+}
+
+
+
+/* Hero CSS */
+
+#hero {
+  min-height: 400px;
+  background: url('../img/bg.png') no-repeat 0 -40px;
+  /* Change the background image for the first section of the site */
+  color: #ffffff;
+  text-align: center;
+  background-size: cover;
+}
+
+#hero h1 {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+
+/* About Us CSS */
+
+#about {
+  min-height: 300px;
+  text-align: center;
+}
+
+#about h1 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+#about p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+
+/* Features CSS */
+
+#features {
+  background-color: #35424a;
+  color: #ffffff;
+  border-top: #61FF00 3px solid;
+  /* Change color scheme */
+  border-bottom: #61FF00 3px solid;
+  /* Change color scheme */
+  margin: auto;
+}
+
+#features img {
+  width: 100px;
+}
+
+#features h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.row {
+  min-width: 100%;
+  display: inline-block;
+  position: relative;
+
+}
+.feature {
+  float: right;
+  width: 30%;
+  text-align: center;
+  padding: 1%;
+
+}
+
+.feature h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.feature p {
+  font-weight: 300;
+  font-size: 16px
+}
+/* IP Section CSS */
+
+#ip {
+  background: url('../img/ipimg.png') no-repeat 0 -100px;
+  background-size: cover;
+  min-height: 250px;
+}
+
+#ip h1{
+  float: left;
+  font-size: 56px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 75px;
+
+}
+
+#ip .ip-button {
+  float: right;
+  font-weight: 300;
+  font-size: 56px;
+  padding: 16px;
+  margin-top: 75px;
+  border:none;
+  border-radius: 15px;
+  background-color: #61FF00 ;
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    outline:none;
+    color: #ffffff
+
+
+}
+
+#ip .ip-button:hover {
+  background-color: #ffffff; /* White */
+    color: black;
+}
+
+/* Staff Section CSS */
+
+#staff {
+  text-align: center;
+  line-height: .5;
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  display: inline-block;
+  position: relative;
+}
+#staff h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+#staff h3 {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+#staff p {
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#staff .moderator{
+  float: left;
+  margin: auto;
+  width: 30%;
+  padding: 1.5%
+
+}
+
+#staff .owner {
+  float: left;
+  margin: auto;
+  width: 30%;
+  padding-left: 34.5%
+
+}
+
+#staff .admin {
+  float: left;
+  margin: auto;
+  width: 30%;
+  padding-left: 12%
+
+}
+
+/*Footer */
+
+ footer {
+  background-color: #35424a;
+  background-size: cover;
+  min-height: 50px;
+  text-align: center;
+}
+footer p {
+  font-weight: 300;
+  padding-top: 20px;
+  margin: auto;
+  color: #ffffff;
+
+
+}
